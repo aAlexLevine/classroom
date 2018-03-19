@@ -14,15 +14,15 @@ app.use(express.static(__dirname + '/../dist'))
 app.use(bodyParser.json())
 
 
-app.post('/newAccount', function(req, res){
-  let email = req.body.newAccount.email
-  let password = req.body.newAccount.password
-  let firstName = req.body.newAccount.firstName
-  let lastName = req .body.newAccount.lastName  
-  let userClass = req.body.newAccount.userClass
+// app.post('/newAccount', function(req, res){
+//   let email = req.body.newAccount.email
+//   let password = req.body.newAccount.password
+//   let firstName = req.body.newAccount.firstName
+//   let lastName = req .body.newAccount.lastName  
+//   let userClass = req.body.newAccount.userClass
   
-  console.log('server/index.js - new account -', email, password, firstName, lastName, userClass)  
-})
+//   console.log('server/index.js - new account -', email, password, firstName, lastName, userClass)  
+// })
 
 // Sign up
   app.post('/newAccount', (req, res)=> {
