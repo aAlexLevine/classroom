@@ -42,7 +42,7 @@ ReactDOM.render(
 	<Provider store={store}>
 		<NavigationBar history={history} />
 		<AppContainer />
-        <SignUp />
+        
 	</Provider>,
 	document.getElementById('app')
 )

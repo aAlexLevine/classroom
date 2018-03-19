@@ -23,6 +23,7 @@ import Heading from 'grommet/components/Heading';
 import Image from 'grommet/components/Image';
 import Button from 'grommet/components/Button';
 /****** Grommet Stuff ******/
+import SignUp from './SignUp.jsx'
 
 class App extends React.Component {
   render() {
@@ -37,6 +38,8 @@ class App extends React.Component {
 				{/* <ClassView /> */}
 				{/* Comment the TeacherMainView out for now...will need to use router later */}
 				<TeacherMainView />
+				This is just a place holder for now.
+				<SignUp/>
 			</div>
 		)
 	}
