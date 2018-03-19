@@ -1,11 +1,14 @@
 const firebase = require('firebase')
 // Add config
 
-const config = {
-	apiKey: '',
-	authDomain: '',
-	databaseURL: ''
-}
+var config = {
+  apiKey: "AIzaSyCNOO34AZkHCvUnp3uNLYec1EsFTooWaBU",
+  authDomain: "test-1-84a61.firebaseapp.com",
+  databaseURL: "https://test-1-84a61.firebaseio.com",
+  projectId: "test-1-84a61",
+  storageBucket: "test-1-84a61.appspot.com",
+  messagingSenderId: "56358894521"
+};
 
 firebase.initializeApp(config);
 const fb = firebase.database();

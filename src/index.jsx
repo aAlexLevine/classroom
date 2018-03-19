@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -40,3 +41,26 @@ ReactDOM.render(
 	document.getElementById('app')
 )
 
+=======
+import React from 'react';
+import ReactDOM from 'react-dom';
+import SignUp from './SignUp.jsx'
+
+class App extends React.Component {
+    constructor(){
+        super();
+        this.state = {
+            test: ''
+        }
+    }
+
+render() {
+    return(
+        <div> test test test 
+        <SignUp />
+        </div>
+    )
+}
+}
+ReactDOM.render(<App/>, document.getElementById('app'));
+>>>>>>> register/ sign-up form and server route, pre-redux
