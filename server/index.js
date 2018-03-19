@@ -14,8 +14,6 @@ app.use(express.static(__dirname + '/../dist'))
 app.use(bodyParser.json())
 
 
-<<<<<<< HEAD
-=======
 // app.post('/newAccount', function(req, res){
 //   let email = req.body.newAccount.email
 //   let password = req.body.newAccount.password
@@ -26,7 +24,6 @@ app.use(bodyParser.json())
 //   console.log('server/index.js - new account -', email, password, firstName, lastName, userClass)  
 // })
 
->>>>>>> SignUp form renders and queries the database
 // Sign up
   app.post('/newAccount', (req, res)=> {
     const {firstName, lastName, email, password, userClass} = req.body.newAccount
