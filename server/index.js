@@ -14,16 +14,6 @@ app.use(express.static(__dirname + '/../dist'))
 app.use(bodyParser.json())
 
 
-// app.post('/newAccount', function(req, res){
-//   let email = req.body.newAccount.email
-//   let password = req.body.newAccount.password
-//   let firstName = req.body.newAccount.firstName
-//   let lastName = req .body.newAccount.lastName  
-//   let userClass = req.body.newAccount.userClass
-  
-//   console.log('server/index.js - new account -', email, password, firstName, lastName, userClass)  
-// })
-
 // Sign up
   app.post('/newAccount', (req, res)=> {
     const {firstName, lastName, email, password, userClass} = req.body.newAccount
@@ -37,7 +27,7 @@ app.use(bodyParser.json())
     .catch(err => {
       res.sendStatus(500)
     })
-  })
+})
 
 // Login
   app.post(`/auth/login`, (req, res)=> {
@@ -61,7 +51,7 @@ app.use(bodyParser.json())
   })
 
 
-// Teacher
+  // Teacher
 
   // Start class
   app.post('/startClass', (erq, res) => {
@@ -84,10 +74,10 @@ app.use(bodyParser.json())
 
   // End Class
 
-// Student
+  // Student
 
   // Join Class in session
-  
+
   // Answer Quiz Question
 
   // Complete Quiz
@@ -96,6 +86,6 @@ app.use(bodyParser.json())
 
 const port = 3000
 app.listen(port, function() {
-  console.log('Listening on ' + port)
+console.log('Listening on ' + port)
 })
 
