@@ -8,7 +8,7 @@ class SignUp extends React.Component {
         email: '',
         password: '',
         firstName:'',
-        lastName:'',
+        Lastname:'',
         userClass: ''
     }
     this.handleChange = this.handleChange.bind(this)
@@ -56,7 +56,7 @@ render(){
             <input name="password" value={this.state.password} placeholder="Password" onChange={(e) => this.handleChange(e)}/>   
             <br/>  
           <h3>Enter your First Name</h3>
-            <input name="firstName" value={this.state.firstName} placeholder="First name" onChange={(e) => this.handleChange(e)}/> 
+            <input name="firsName" value={this.state.firstName} placeholder="First name" onChange={(e) => this.handleChange(e)}/> 
           <h3>Enter your Last Name</h3>
             <input name="lastName" value={this.state.lastName} placeholder="Last name" onChange={(e) => this.handleChange(e)}/> 
           <h3>Please choose one</h3>
