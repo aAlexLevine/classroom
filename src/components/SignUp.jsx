@@ -8,11 +8,7 @@ class SignUp extends React.Component {
         email: '',
         password: '',
         firstName:'',
-<<<<<<< HEAD:src/components/SignUp.jsx
         lastName:'',
-=======
-        Lastname:'',
->>>>>>> title is now userClass:src/SignUp.jsx
         userClass: ''
     }
     this.handleChange = this.handleChange.bind(this)
