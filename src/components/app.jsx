@@ -21,6 +21,7 @@ import Heading from 'grommet/components/Heading';
 import Image from 'grommet/components/Image';
 import Button from 'grommet/components/Button';
 /****** Grommet Stuff ******/
+import SignUp from './SignUp.jsx'
 
 class App extends React.Component {
   render() {
@@ -29,6 +30,8 @@ class App extends React.Component {
 				{/* Will need to put a conditional statement here for different class of user
 				in case of conditional rendering or use router */}
 				<TeacherMainView />
+				This is just a place holder for now.
+				<SignUp/>
 			</div>
 		)
 	}
