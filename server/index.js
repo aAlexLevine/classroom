@@ -18,9 +18,9 @@ app.post('/newAccount', function(req, res){
   let password = req.body.newAccount.password
   let firstName = req.body.newAccount.firstName
   let lastName = req .body.newAccount.lastName  
-  let title = req.body.newAccount.title
+  let userClass = req.body.newAccount.userClass
   
-  console.log('server/index.js - new account -', email, password, title)  
+  console.log('server/index.js - new account -', email, password, firstName, lastName, userClass)  
 })
 
 // Sign up

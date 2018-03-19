@@ -9,7 +9,7 @@ class SignUp extends React.Component {
         password: '',
         firstName:'',
         Lastname:'',
-        title: ''
+        userClass: ''
     }
     this.handleChange = this.handleChange.bind(this)
     this.handleSubmit = this.handleSubmit.bind(this)
@@ -27,7 +27,7 @@ class SignUp extends React.Component {
       password: this.state.password,
       firstName: this.state.firstName,
       lastName: this.state.lastName,
-      title: this.state.title
+      userClass: this.state.userClass
     }
        
     axios.post('/newAccount', { newAccount })
@@ -60,8 +60,8 @@ render(){
           <h3>Enter your Last Name</h3>
             <input name="lastName" value={this.state.lastName} placeholder="Last name" onChange={(e) => this.handleChange(e)}/> 
           <h3>Please choose one</h3>
-            <input type="radio" value="student" name="title" onChange={(e) => this.handleChange(e)}/>Student
-            <input type="radio" value="teacher" name="title" onChange={(e) => this.handleChange(e)}/>Teacher
+            <input type="radio" value="student" name="userClass" onChange={(e) => this.handleChange(e)}/>Student
+            <input type="radio" value="teacher" name="userClass" onChange={(e) => this.handleChange(e)}/>Teacher
             <br/>
             <button type="submit">Create Account</button>
         </form>
