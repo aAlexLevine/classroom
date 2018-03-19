@@ -31,6 +31,11 @@ if (localStorage.jwtToken) {
 ReactDOM.render(
 	<Provider store={store}>
 		<NavigationBar history={history} />
+<<<<<<< HEAD
+=======
+		<AppContainer />
+        
+>>>>>>> rendering with redux installed
 	</Provider>,
 	document.getElementById('app')
 )
