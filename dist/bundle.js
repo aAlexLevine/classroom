@@ -63,16 +63,26 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
+<<<<<<< HEAD
 /******/ 	return __webpack_require__(__webpack_require__.s = 0);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
+=======
+/******/ 	return __webpack_require__(__webpack_require__.s = 205);
+/******/ })
+/************************************************************************/
+/******/ ({
+
+/***/ 205:
+>>>>>>> register/ sign-up form and server route, pre-redux
 /* no static exports found */
 /* all exports used */
 /*!***********************!*\
   !*** ./src/index.jsx ***!
   \***********************/
+<<<<<<< HEAD
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2597,3 +2607,12 @@ eval("/*!\n * Determine if an object is a Buffer\n *\n * @author   Feross Aboukh
 
 /***/ })
 /******/ ]);
+=======
+/***/ (function(module, exports) {
+
+eval("throw new Error(\"Module build failed: SyntaxError: /Users/alexlevine/Desktop/Thesis/classroom/package.json: Error while parsing JSON - Unexpected token < in JSON at position 763\\n    at JSON.parse (<anonymous>)\\n    at ConfigChainBuilder.addConfig (/Users/alexlevine/Desktop/Thesis/classroom/node_modules/babel-core/lib/transformation/file/options/build-config-chain.js:150:65)\\n    at ConfigChainBuilder.findConfigs (/Users/alexlevine/Desktop/Thesis/classroom/node_modules/babel-core/lib/transformation/file/options/build-config-chain.js:102:30)\\n    at buildConfigChain (/Users/alexlevine/Desktop/Thesis/classroom/node_modules/babel-core/lib/transformation/file/options/build-config-chain.js:61:13)\\n    at OptionManager.init (/Users/alexlevine/Desktop/Thesis/classroom/node_modules/babel-core/lib/transformation/file/options/option-manager.js:354:58)\\n    at File.initOptions (/Users/alexlevine/Desktop/Thesis/classroom/node_modules/babel-core/lib/transformation/file/index.js:212:65)\\n    at new File (/Users/alexlevine/Desktop/Thesis/classroom/node_modules/babel-core/lib/transformation/file/index.js:135:24)\\n    at Pipeline.transform (/Users/alexlevine/Desktop/Thesis/classroom/node_modules/babel-core/lib/transformation/pipeline.js:46:16)\\n    at transpile (/Users/alexlevine/Desktop/Thesis/classroom/node_modules/babel-loader/lib/index.js:46:20)\\n    at Object.module.exports (/Users/alexlevine/Desktop/Thesis/classroom/node_modules/babel-loader/lib/index.js:163:20)\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiMjA1LmpzIiwic291cmNlcyI6W10sIm1hcHBpbmdzIjoiIiwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///205\n");
+
+/***/ })
+
+/******/ });
+>>>>>>> register/ sign-up form and server route, pre-redux
