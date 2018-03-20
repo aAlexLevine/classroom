@@ -22,7 +22,6 @@ import Image from 'grommet/components/Image';
 import Button from 'grommet/components/Button';
 /****** Grommet Stuff ******/
 import SignUp from './SignUp.jsx'
-import SignUp from './SignUp.jsx'
 import StudentViewQuiz from './students/StudentViewQuiz.jsx';
 
 class App extends React.Component {
