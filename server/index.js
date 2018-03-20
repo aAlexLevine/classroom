@@ -4,9 +4,13 @@ const bodyParser = require('body-parser')
 const main = require('../db/mainDb.js');
 const jwt = require('jsonwebtoken');
 const dbMethods = require('../db/mainDb.js');
+
 const config = require('./config.js');
 const migration = require('./migrationWorker.js')
-// const { fb } = require('../db/liveClassroom.js')
+
+const { fb } = require('../db/liveClassroom.js')
+
+
 
 const app = express()
 
@@ -15,7 +19,6 @@ app.use(bodyParser.json())
 
 
 // Sign up
-
   app.post('/newAccount', (req, res)=> {
     const {firstName, lastName, email, password, userClass} = req.body.newAccount
 
