@@ -43,6 +43,11 @@ app.post('/newAccount', (req, res)=> {
 
   // Answer Quiz Question
 
+  app.post('/answer', (req, res) => {
+    let answer = req.body.answer
+    console.log('answer submitted', answer)
+  })
+
   // Complete Quiz
 
 
