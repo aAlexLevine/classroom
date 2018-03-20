@@ -4,7 +4,7 @@ const bodyParser = require('body-parser')
 const main = require('../db/mainDb.js');
 const jwt = require('jsonwebtoken');
 const dbMethods = require('../db/mainDb.js');
-const config = require('./config.js');
+// const config = require('./config.js');
 // const { fb } = require('../db/liveClassroom.js')
 
 const app = express()
@@ -14,7 +14,6 @@ app.use(bodyParser.json())
 
 
 // Sign up
-<<<<<<< HEAD
   app.post('/newAccount', (req, res)=> {
     const {firstName, lastName, email, password, userClass} = req.body.newAccount
 
@@ -27,24 +26,8 @@ app.use(bodyParser.json())
     .catch(err => {
       res.sendStatus(500)
     })
-=======
-
-app.post('/newAccount', (req, res)=> {
-  const {firstName, lastName, email, password, userClass} = req.body.newAccount
-
-  main.addUser(firstName, lastName, email, password, userClass)
-  .then((data)=> {
-    if (data === 'User already exists')
-    console.log('user already exits')
-    res.sendStatus(403)
->>>>>>> signup form renders and queries postgres
-  })
-  .catch(err => {
-    res.sendStatus(500)
-  })
 })
 
-<<<<<<< HEAD
 // Login
   app.post(`/auth/login`, (req, res)=> {
     var email = req.body.email;
@@ -65,10 +48,6 @@ app.post('/newAccount', (req, res)=> {
       }
     })
   })
-=======
-  // Login
-  // Specifiy user class in params
->>>>>>> signup form renders and queries postgres
 
 
   // Teacher
