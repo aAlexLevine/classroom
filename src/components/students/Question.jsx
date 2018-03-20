@@ -1,5 +1,7 @@
 import React from 'react';
 import Answers from './Answers.jsx'
+import Card from 'grommet/components/Card';
+import Tile from 'grommet/components/Tile';
 
 class Question extends React.Component {
   constructor(props) {
@@ -24,7 +26,7 @@ class Question extends React.Component {
 render() {
    {console.log('props in question', this.props)}
   return (
-    <div style={questionCSS}>
+    <Tile style={questionCSS}>
         
         <div>
           {this.props.question.q}  
@@ -38,7 +40,7 @@ render() {
           </ol>
         </div>
         <button>Submit Answer</button>
-     </div>
+     </Tile>
   )
 }
 }
