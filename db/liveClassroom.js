@@ -35,6 +35,18 @@ const endClass = function(classId) {
  
 }
 
+//create a top level node ref
+// var ref = fb.ref.child('classes')
+
+//create a child node of classes 
+  
+
+
+
+
+
+
+
 // Database helpers
 
 module.exports = {
