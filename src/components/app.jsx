@@ -22,6 +22,8 @@ import Image from 'grommet/components/Image';
 import Button from 'grommet/components/Button';
 /****** Grommet Stuff ******/
 import SignUp from './SignUp.jsx'
+import SignUp from './SignUp.jsx'
+import StudentViewQuiz from './students/StudentViewQuiz.jsx';
 
 class App extends React.Component {
   render() {
@@ -32,6 +34,8 @@ class App extends React.Component {
 				<TeacherMainView />
 				This is just a place holder for now.
 				<SignUp/>
+				{/* <SignUp/> */}
+				<StudentViewQuiz/>
 			</div>
 		)
 	}

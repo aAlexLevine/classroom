@@ -15,6 +15,7 @@ import jwt from 'jsonwebtoken';
 import { setCurrentUser } from './actions/index';
 
 
+
 //const logger = createLogger();
 
 const store = createStore(rootReducer, composeWithDevTools(
@@ -38,4 +39,6 @@ ReactDOM.render(
 	</Provider>,
 	document.getElementById('app')
 )
+
+
 
