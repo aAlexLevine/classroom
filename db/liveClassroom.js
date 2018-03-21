@@ -51,4 +51,8 @@ const endClass = function(classId) {
 
 module.exports = {
   fb
+<<<<<<< HEAD
+=======
+  //startClass,
+>>>>>>> working through merge
 }

@@ -11,7 +11,6 @@ import { composeWithDevTools } from 'redux-devtools-extension';
 import setAuthorizationToken from './utils/setAuthorizationToken';
 import jwt from 'jsonwebtoken';
 import { setCurrentUser } from './actions/index';
-
 import { Router } from 'react-router-dom';
 import { browserHistory } from 'react-router';
 import {syncHistoryWithStore } from 'react-router-redux';

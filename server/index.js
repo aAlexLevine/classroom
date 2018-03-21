@@ -4,13 +4,20 @@ const bodyParser = require('body-parser')
 const main = require('../db/mainDb.js');
 const jwt = require('jsonwebtoken');
 const dbMethods = require('../db/mainDb.js');
+<<<<<<< HEAD
 
 const config = require('./config.js');
+=======
+// const config = require('./config.js');
+>>>>>>> working through merge
 const migration = require('./migrationWorker.js')
 
 const { fb } = require('../db/liveClassroom.js')
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> working through merge
 
 const app = express()
 
