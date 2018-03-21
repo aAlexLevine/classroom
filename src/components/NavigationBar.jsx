@@ -16,6 +16,8 @@ import Anchor from 'grommet/components/Anchor';
 import Menu from 'grommet/components/Menu';
 import Box from 'grommet/components/Box';
 import Actions from 'grommet/components/icons/base/Action.js';
+import SignUp from './Signup.jsx';
+import StudentViewQuiz from './students/StudentViewQuiz.jsx'
 
 class NavigationBar extends React.Component {
     constructor(props) {
@@ -69,11 +71,13 @@ class NavigationBar extends React.Component {
                             < Link to="/signup"> Signup </Link>
                         </Anchor>
                         <Anchor href='#'>
-                            Logout
+                            <li> < Link to="/quiz"> Quiz </Link> </li>
                         </Anchor>
                     </Menu>
                 </Box>
             </Header>
+                            
+
 
         
                         <Switch>
@@ -83,6 +87,8 @@ class NavigationBar extends React.Component {
                                     this.checkAuth
                             } />  
                             <Route path="/login" component={SignIn}  />
+                            <Route path="/signUp" component={SignUp}/>
+                            <Route path="/quiz" component={StudentViewQuiz}/>
                         </Switch>
                 </nav>
                 </Router>
