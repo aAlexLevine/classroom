@@ -92,6 +92,10 @@ render() {
   }
 }
 
-
+function mapStateToProps(stte) {
+  // return {
+  //   notSureYet: state. 
+  // }
+}
 
 export default StudentViewQuiz;

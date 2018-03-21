@@ -35,7 +35,7 @@ render() {
         <div>
           <ol>
           {this.props.question.choices.map((choice, i) => (
-            <Answers key={i} choice={choice} />
+            <Answers key={i} choice={choice} response={this.props.responses[choice.id]} />
           ))}
           </ol>
         </div>
