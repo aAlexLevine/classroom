@@ -56,6 +56,6 @@ const endClass = function(classId) {
 // Database helpers
 
 module.exports = {
-  fb,
-  startClass,
+  fb
+  //startClass,
 }

@@ -12,20 +12,15 @@ import { composeWithDevTools } from 'redux-devtools-extension';
 import setAuthorizationToken from './utils/setAuthorizationToken';
 import jwt from 'jsonwebtoken';
 import { setCurrentUser } from './actions/index';
-<<<<<<< HEAD
 import { Router } from 'react-router-dom';
 import { browserHistory } from 'react-router';
 import {syncHistoryWithStore } from 'react-router-redux';
 import { createBrowserHistory } from 'history';
 import NavigationBar from './components/NavigationBar.jsx';
 //import ClassView from './components/classView.jsx';
-import { composeWithDevTools } from 'redux-devtools-extension';
 // import { Router, Route, browserHistory } from 'react-router'
 // import { syncHistoryWithStore, routerReducer } from 'react-router-redux'
-import SignUp from './SignUp.jsx'
-=======
-
->>>>>>> rebased to grommet ui
+//import SignUp from './SignUp.jsx'
 
 //const logger = createLogger();
 
