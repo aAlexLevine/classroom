@@ -40,7 +40,7 @@ if (localStorage.jwtToken) {
 ReactDOM.render(
 	<Provider store={store}>
 		<NavigationBar history={history} />
-		<AppContainer />
+		{/* <AppContainer /> */}
         
 	</Provider>,
 	document.getElementById('app')
