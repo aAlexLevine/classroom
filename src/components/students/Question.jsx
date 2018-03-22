@@ -1,46 +1,60 @@
 import React from 'react';
 import Answers from './Answers.jsx'
 import Card from 'grommet/components/Card';
-import Tile from 'grommet/components/Tile';
+// import Tile from 'grommet/components/Tile';
+import Section from 'grommet/components/Section';
+import Label from 'grommet/components/Label';
+import List from 'grommet/components/List';
+import ListItem from 'grommet/components/ListItem';
+import Animate from 'grommet/components/Animate';
+
+
+
+
 
 class Question extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      questionNumber: 0
+      // questionNumber: 0,
+      // answers: []
     }
+    this.handleSelect=this.handleSelect.bind(this);
   }
 
-  handleSubmit(answer) {
-    axios.post('/answer', { answer: answer })
-      .then(()=> {
-        console.log('answer')
-      })
-      .catch((error)=>{
-        console.log('error, Answers.jsx', error)
-      })
-      // e.preventDefault()
+  handleSelect(answer) {
+    console.log('answer ', answer)
+    //send answer object to wherever the response object is 
+    
     }
+ 
   
 
 render() {
-   {console.log('props in question', this.props)}
+   let answerArray = Object.keys(this.props.question.answers)
+
   return (
-    <Tile style={questionCSS}>
+    <Section >
+        <Animate enter={{"animation": "fade", "duration": 1000, "delay": 0}}keep={true}>
+          <Label>
+            {this.props.question.text}  
+          </Label>
         
-        <div>
-          {this.props.question.q}  
-        </div>
-        
-        <div>
-          <ol>
-          {this.props.question.choices.map((choice, i) => (
-            <Answers key={i} choice={choice} />
-          ))}
-          </ol>
-        </div>
-        <button>Submit Answer</button>
-     </Tile>
+          <List>
+              <ol>
+                {answerArray.map((answerNum, i) => (
+                <Answers key={i} 
+                answersObj={this.props.question.answers}
+                answerNum={answerNum} 
+                studentResponseObj={this.props.studentResponseObj}
+                handleSelect={this.handleSelect} 
+                />
+                ))}
+              </ol>
+        </List>
+      </Animate>
+        {/* <button>Submit Answer</button> */}
+     </Section>
   )
 }
 }
@@ -48,3 +62,4 @@ render() {
 const questionCSS = {border: 'solid'}
 
 export default Question;
+

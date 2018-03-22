@@ -9,7 +9,7 @@ import * as Actions from '../../actions/index.js';
 /****** Grommet Stuff ******/
 import "grommet/scss/hpinc/index.scss";
 import GrommetApp from "grommet/components/App";
-// import Header from "grommet/components/Header";
+import Header from "grommet/components/Header";
 import Title from "grommet/components/Title";
 import Box from "grommet/components/Box";
 import Search from "grommet/components/Search";

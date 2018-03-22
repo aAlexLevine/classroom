@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
+import { HashRouter as Router, Route, Link, Switch } from 'react-router-dom';
 import {withRouter, Redirect} from 'react-router';
 import App from './app.jsx';
 import SignIn from './SignIn.jsx';

@@ -51,6 +51,7 @@ class App extends React.Component {
 	}
 }
 
+
 function mapStateToProps(state) {
   return {
 		// subject to change
