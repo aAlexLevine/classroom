@@ -17,15 +17,7 @@ class Question extends React.Component {
  
   
 render() {
-  // let studentId = this.props.auth.userId
-  //  let studentId = '37'
-  //  let classId = '25'
-   //let currentQuestion = this.props.passedProps.class[classId].students[studentId].currentQuestion
-   console.log('this.props.passedProps', this.props.question)
    let answerArray = Object.keys(this.props.currentQuestionsAnswers)
-   //let currentQuestion = this.props.class.students[this.props.auth.user.userId].currentQuestion
-   
-   //let questionText = this.props.passedProps.class[classId].quizzes[this.props.class[classId].activeView].questions[currentQuestion].text
   return (
     <Section >
         <Animate enter={{"animation": "fade", "duration": 1000, "delay": 0}}keep={true}>

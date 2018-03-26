@@ -4,7 +4,7 @@ import { bindActionCreators } from "redux";
 //import ClassLabel from './classLabel.jsx';
 import * as Actions from "../../actions/index.js";
 import Default from './classViewDefault.jsx'
-import Quiz from './StudentViewQuiz.jsx'
+import QuizContainer from './quizContainer.jsx'
 
 
 class StudentLiveClassView extends React.Component {
@@ -12,19 +12,26 @@ class StudentLiveClassView extends React.Component {
 		super();
 	}
   render() {
-	console.log(this.props)
-		if (!this.props.activeView.activeView) {
-			return <Default />
-		} else {
-			return <Quiz />
-		}
+	console.log('STUDENT LIVE CLASS VIEW PROPS.TARGETCLASS ', this.props.targetClass)
+		
+			if(this.props.targetClass.isLive){
+				return <QuizContainer/>
+			} else {
+				return <Default/>
+			}
+	
+		// if (!this.props.studentClassView.targetClass.quizzes) {
+		// 	 return <ClassViewDefault />
+		// } else {
+		// 	 return <quizContainer/>
+		// }
   }
 }
 
 function mapStateToProps(state) {
 	return {
-		activeView: state.studentClassView.targetClass
-		// targetClass: state.studen
+		// targetClass: state.studentClassView.targetClass
+		targetClass: state.teachersClassView.targetClass
 	}
 }
 
